@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Objects;
 
 public class Student {
     private long id;
@@ -26,6 +27,7 @@ public class Student {
     public void addGrade(int grade) {
         this.grades.add(grade);
     }
+
     public double getGradeAverage() {
         int sum = 0;
         for (int grade : this.grades) {
@@ -33,4 +35,5 @@ public class Student {
         }
         return this.grades.isEmpty() ? 0 : (double) sum / this.grades.size();
     }
+
 }
